@@ -188,44 +188,7 @@
 	}
 	window.jt.isPassword = isPassword; 
 	
-	function exeMsg(text) {
-		var div = createTag('div');
-		div.setAttribute('id', 'exeResult');
-		var closeDiv = createTag('div');
-		closeDiv.style.backgroundColor = "#000";
-		closeDiv.style.fontFamily = "Verdana";
-		closeDiv.style.fontWeight = "bold";
-		closeDiv.style.color = "white";
-		closeDiv.style.textAlign = "center";
-		closeDiv.style.width = "1.4em";
-		closeDiv.style.height = "1.4em";
-		closeDiv.style.position = "absolute";
-		closeDiv.style.right = "3px";
-		closeDiv.style.top = "3px";
-		closeDiv.style.border = "1px solid #efefef";
-		closeDiv.style.cursor = "pointer";
-		closeDiv.style.borderRadius = "3px";
-		closeDiv.onclick = function() {
-			document.body.removeChild(id('exeResult'));
-		}
 
-		closeDiv.appendChild(createText('X'));
-		div.appendChild(closeDiv);
-
-		div.style.padding = "10px 30px 10px 10px";
-		div.style.border = "1px solid #F9592B";
-		div.style.backgroundColor = "#F8EEC2";
-		div.style.color = "#FD6102";
-		div.style.position = "absolute";
-		div.style.top = "2px";
-		div.style.left = "200px";
-
-		var text = createText(text);
-		div.appendChild(text);
-		document.body.appendChild(div);
-	}
-	
-	window.jt.exeMsg = exeMsg; 
 	
 //}).call(this);
 })(jQuery);

@@ -20,7 +20,7 @@
     12: 封装Ajax 
     13：将HTML编码 
     调用方法： 
-    KW.x(); 
+    KW.x();  
      */  
 (function() {
 	if (!window.KW) {
