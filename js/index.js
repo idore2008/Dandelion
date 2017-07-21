@@ -4,7 +4,7 @@
 
 (function(){
 	
-	if (typeof window.utils == 'undefined') {
+	if (typeof window.utils == 'undefined' ) {
 		window.utils = {};  
 	} else {
 		window.utils = utils;  

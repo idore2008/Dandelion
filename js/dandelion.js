@@ -4,7 +4,7 @@
     @ Date : 2017-05-12 
     @ Email : idore2008@163.com 
     @ Version : 1.0 
-  	@ Description
+  	@ Description 
     功能： 
 	    1:  $ID选择 
 	    2： 事件绑定，事件移除，获取事件目标 
@@ -54,7 +54,7 @@
 	
 	//字符串不为空
 	function isNotEmpty(str) {
-		if(str != '' && str != 'undefined' && str != null) {
+		if(str != '' && typeof(str) != 'undefined' && str != null) {
 			return true;
 		} else {
 			return false;
@@ -64,7 +64,7 @@
 	
 	//字符串为空
 	function isEmpty(str) {
-		if(str == '' || str == null) {
+		if(str == '' || str == null || typeof(str) == "undefined") {
 			return true;
 		} else {
 			return false;
@@ -87,7 +87,7 @@
 	
 	//匹配身份证号
 	function isIDCard(idCard) { 
-		var pattern = /^\d{14}[[0-9],0-9xX]$/;
+		var pattern = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[12])(0[1-9]|[12]\d|3[01])\d{3}(\d|x|X)$/;
 		return pattern.test(idCard);
 	}
 	window.jt.isIDCard = isIDCard; 
@@ -101,7 +101,7 @@
 	
 	//匹配邮编
 	function isPost(post) { 
-		var pattern = /^[1-9]\\d{5}(?!\d)$/;
+		var pattern = /^(\d{3})|(\d{6})$/;
 		return pattern.test(post);
 	}
 	window.jt.isPost = isPost; 
@@ -141,7 +141,7 @@
 	window.jt.isURL = isURL; 
 	//匹配手机号
 	function isMobilePhone(phone) { 
-		var pattern = /^1[3|4|5|7|8][0-9]\d{6,8}$/;
+		var pattern = /^1[3|4|5|7|8][0-9]\d{8}$/;
 		return pattern.test(phone);
 	}
 	window.jt.isMobilePhone = isMobilePhone; 
