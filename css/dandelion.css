@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+
+/*
+	@desc My Stylesheet for my own used
+	@author jiangtao
+	@date 2016-12-01
+	@version 1.0
+	
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body { 
+	font-size: 14px; 
+	font-weight: normal;
+	font-family: "黑体"; 
+	line-height: normal;
+	color:#636465; 
+	background-color:#fff;
+}
+/* 字体大小 */
+.dandelion .font8 {
+	8px;
+}
+.dandelion .font12 {
+	12px;
+}
+.dandelion .font14 {
+	14px;
+}
+.dandelion .font16 {
+	16px;
+}
+.dandelion .font18 {
+	18px;
+}
+.dandelion .font24 {
+	24px;
+}
+.dandelion .font32 {
+	32px;
+}
+
+/* 
+   颜色：黑,白,红,橙红,番茄,巧克力,黄,橙,蓝,绿,灰,紫,棕,粉红,桃色,金,银,麦色
+ */
+.dandelion .limpid2 {
+	filter: alpha(opacity = 20);  	/*支持 IE 浏览器*/
+	-moz-opacity: 0.2; 				/*支持 FireFox 浏览器*/
+	opacity: 0.2;  					/*支持 Chrome, Opera, Safari 等浏览器*/
+} 
+.dandelion .limpid5 {
+	filter: alpha(opacity = 50);  	/*支持 IE 浏览器*/
+	-moz-opacity: 0.5; 				/*支持 FireFox 浏览器*/
+	opacity: 0.5;  					/*支持 Chrome, Opera, Safari 等浏览器*/
+}
+.dandelion .limpid8 {
+	filter: alpha(opacity = 80);  	/*支持 IE 浏览器*/
+	-moz-opacity: 0.8; 				/*支持 FireFox 浏览器*/
+	opacity: 0.8;  					/*支持 Chrome, Opera, Safari 等浏览器*/
+}
+ 
+.dandelion .transparent{
+	color:rgba(0,0,0,0);
+}
+.dandelion .black {
+	color: #000;
+}
+.dandelion .white {
+	color: #fff;
+}
+.dandelion .red {
+	color: #FF0000;
+}
+.dandelion .orangeRed {
+	color: #FF4500;
+}
+.dandelion .tomato {
+	color: #FF6347;
+}
+.dandelion .chocolate {
+	color: #D2691E;
+}
+.dandelion .yellow {
+	color: #FFFF00;
+}
+.dandelion .light-yellow {
+	color: #FFFFE0;
+}
+.dandelion .orange {
+	color: #FFA500;
+}
+.dandelion .blue {
+	color: #0000FF;
+}
+.dandelion .light-blue {
+	color: #ADD8E6;
+}
+.dandelion .sky-blue {
+	color: #87CEEB;
+}
+.dandelion .dark-blue {
+	color: #00008B;
+}
+.dandelion .green {
+	color: #008000;
+}
+.dandelion .light-green {
+	color: #90EE90;
+}
+.dandelion .gray {
+	color: #808080;
+}
+.dandelion .purple {
+	color: #800080;
+}
+.dandelion .brown {
+	color: #A52A2A;
+}
+.dandelion .pink {
+	color: #FFC0CB;
+}
+.dandelion .peach {
+	color: #FFDAB9;
+}
+.dandelion .gold {
+	color: #FFD700;
+}
+.dandelion .silver {
+	color: #C0C0C0;
+}
+.dandelion .wheat {
+	color:#F5DEB3;
+}
+
+/* 有序、无序列表  */
+.dandelion none.ol li, .dandelion none.ul li {
+	list-style: none outside none; 
+	margin: 0; 
+	padding: 0;
+}
+
+/* 自定义列表以 <dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。 */
+.dandelion dl {
+	
+}
+
+.dandelion dl dt{
+	
+}
+
+.dandelion dl dd{
+	
+}
+
+/* a标签 */
+.dandelion a {
+	cursor: pointer;
+	text-decoration: none; 	
+}
+
+.dandelion a:hover, .dandelion a:focus, .dandelion a:link, .dandelion a:after {
+	text-decoration: none;
+	color:red;
+}
+
+.dandelion .fl { 
+	float:left
+}
+
+.dandelion .fr {
+	float:right
+}
+.dandelion .clear { 
+	display: block; 
+	clear: both; 
+	overflow: hidden;
+	 }
+.dandelion .clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+}
+
+.dandelion .h4px {
+	height: 4px;
+	line-height: 4px;
+}
+.dandelion .h5px {
+	height: 5px;
+	line-height: 5px;
+}
+.dandelion .h8px {
+	height: 8px;
+	line-height: 8px;
+}
+.dandelion .h10px {
+	height: 10px;
+	line-height: 10px;
+}
+.dandelion .h15px {
+	height: 15px;
+	line-height: 15px;
+}
+.dandelion .h16px {
+	height: 16px;
+	line-height: 16px;
+}
+.dandelion .h30px {
+	height: 30px;
+	line-height: 30px;
+}
+.dandelion .h32px {
+	height: 32px;
+	line-height: 32px;
+}
+
+/* 边框 */
+
+/* 圆角 */
+.dandelion .radius {
+	border-radius: 1px solid #87CEEB;
+}
+.dandelion .top-radius {	
+	border-top-left-radius: 1px solid #87CEEB;
+	border-top-right-radius: 1px solid #87CEEB;
+}
+.dandelion .right-radius {
+	border-bottom-right-radius: 1px solid #87CEEB;
+	border-top-right-radius: 1px solid #87CEEB;
+}
+.dandelion .bottom-radius {
+	border-bottom-left-radius: 1px solid #87CEEB;
+	border-bottom-right-radius: 1px solid #87CEEB;	
+}
+.dandelion .left-radius {
+	border-bottom-left-radius: 1px solid #87CEEB;
+	border-top-left-radius: 1px solid #87CEEB;
+}
+/* 阴影	
+		box-shadow: h-shadow v-shadow blur spread color inset; 
+		h-shadow	必需。水平阴影的位置。允许负值。	
+		v-shadow	必需。垂直阴影的位置。允许负值。	
+		blur		可选。模糊距离。	
+		spread		可选。阴影的尺寸。	
+		color		可选。阴影的颜色。请参阅 CSS 颜色值。	
+		inset		可选。将外部阴影 (outset) 改为内部阴影。
+*/
+.dandelion .shadow {
+	box-shadow:1px 1px 1px 1px #EAEAEA,-1px -1px 1px 1px #EAEAEA,1px -1px 1px 1px #EAEAEA,-1px 1px 1px 1px #EAEAEA;
+	-webkit-box-shadow:1px 1px 1px 1px #EAEAEA,-1px -1px 1px 1px #EAEAEA,1px -1px 1px 1px #EAEAEA,-1px 1px 1px 1px #EAEAEA;
+    -moz-box-shadow:1px 1px 1px 1px #EAEAEA,-1px -1px 1px 1px #EAEAEA,1px -1px 1px 1px #EAEAEA,-1px 1px 1px 1px #EAEAEA;  
+}
+		
+	

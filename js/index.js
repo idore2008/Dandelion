@@ -14,7 +14,7 @@
 			
 		version : "1.0", 
 		isEmpty : function(val) {
-			if(val == '' || val == 'undefined' || val == null) {
+			if(val == '' || typeof val == 'undefined' || val == null) {
 				return false;
 			}
 		}
